@@ -11,6 +11,11 @@ namespace MVC_First.Controllers
         // GET: Home
         public string Index()
         {
+            return "Hello World... This is MVC application";
+        }
+
+        public string Version()
+        {
             return typeof(Controller).Assembly.GetName().Version.ToString();
         }
     }
